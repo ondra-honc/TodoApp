@@ -1,5 +1,20 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+  ViewData["Title"] = "Home page";
 }
+
+@Html.AntiForgeryToken()
+
+<div class="task-view">
+  <h2>Tasks</h2>
+  <input type="text" id="task-name" placeholder="Napiš název úkolu..." class="task-input" />
+  <button type="button" class="add-task">Add Task +</button>
+</div>
+
+<div class="task-list" id="task-container">
+  <div class="task">
+    <h2>TASK NAME</h2>
+    <input type="checkbox" name="task" value="Task" />
+  </div>
+</div>

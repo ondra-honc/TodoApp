@@ -7,7 +7,19 @@ namespace MyTodoApp.Pages
   {
     public void OnGet()
     {
+    }
 
+    public IActionResult OnPostCreateTask()
+    {
+      string taskName = Request.Form["taskName"];
+
+      if (string.IsNullOrWhiteSpace(taskName))
+      {
+        return BadRequest("Název úkolu nesmí být prázdný.");
+      }
+
+      var newTask = new { name = taskName };
+      return new JsonResult(newTask);
     }
   }
 }

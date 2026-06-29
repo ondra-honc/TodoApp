@@ -21,9 +21,7 @@ C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\rjsmcshtml.dsw
 C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\scopedcss\bundle\MyTodoApp.styles.css
 C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\scopedcss\projectbundle\MyTodoApp.bundle.scp.css
-C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\compressed\a02mm0jvak-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\compressed\mwy2tyn3h6-{0}-61n19gt1b8-61n19gt1b8.gz
-C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\compressed\scxtbhr5ns-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\compressed\yb5vsb7dja-{0}-bqjiyaj88i-bqjiyaj88i.gz
 C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\compressed\6zxuqzcfkk-{0}-c2jlpeoesf-c2jlpeoesf.gz
 C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\compressed\c4f88aq2hd-{0}-erw9l3u2r3-erw9l3u2r3.gz
@@ -94,5 +92,8 @@ C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\refint\MyTodoA
 C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\MyTodoApp.pdb
 C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\MyTodoApp.genruntimeconfig.cache
 C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\ref\MyTodoApp.dll
-C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\compressed\qqby2oj5rk-{0}-41ybsazh06-41ybsazh06.gz
-C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\compressed\3rwz7raso7-{0}-41ybsazh06-41ybsazh06.gz
+C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\MyTodoApp.sourcelink.json
+C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\compressed\qqby2oj5rk-{0}-1756v6zz8g-1756v6zz8g.gz
+C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\compressed\3rwz7raso7-{0}-1756v6zz8g-1756v6zz8g.gz
+C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\compressed\a02mm0jvak-{0}-bey0n6n7k3-bey0n6n7k3.gz
+C:\Users\Ondra\source\repos\MyTodoApp\MyTodoApp\obj\Debug\net10.0\compressed\scxtbhr5ns-{0}-z30vm8jzpf-z30vm8jzpf.gz
