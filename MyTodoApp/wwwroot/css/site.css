@@ -12,57 +12,15 @@ body {
   box-sizing: border-box;
 }
 
-.task-view {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.add-task {
-  padding: .5rem;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: lightgreen;
-  font-size: 1.5rem;
-  width: auto;
-  height: 2rem;
-  border-radius: .5rem;
-  border-color: none;
-  box-shadow: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.add-task:hover {
-  background-color: lightblue;
-}
-
-.task-list {
-  display: block;
-  align-items: center;
-  justify-content: center;
-}
-
 .task {
   display: flex;
   align-items: center;
-  margin: 3rem;
-  justify-content: space-between;
-  background-color: antiquewhite;
-  padding: 2rem;
+  gap: 1rem;
 }
 
-.task-input {
-  padding: 0.4rem 0.8rem;
-  font-size: 1rem;
-  border: 2px solid #ccc;
-  border-radius: 0.5rem;
-  outline: none;
-  transition: border-color 0.2s;
+.left {
+  margin-right: auto;
 }
-
-.task-input:focus {
-  border-color: lightgreen; 
+.task:has(#taskIsDone:checked) {
+  background-color: lightgreen;
 }

@@ -1,20 +1,38 @@
 ﻿@page
 @model IndexModel
 @{
-  ViewData["Title"] = "Home page";
+  ViewData["Title"] = "Můj To-Do List";
 }
 
 @Html.AntiForgeryToken()
 
-<div class="task-view">
-  <h2>Tasks</h2>
-  <input type="text" id="task-name" placeholder="Napiš název úkolu..." class="task-input" />
-  <button type="button" class="add-task">Add Task +</button>
-</div>
+<div class="text-center">
+  <h1 class="display-4 fw-bold text-primary">Můj To-Do List</h1>
 
-<div class="task-list" id="task-container">
-  <div class="task">
-    <h2>TASK NAME</h2>
-    <input type="checkbox" name="task" value="Task" />
+  <form method="post" class="mt-4 mb-4 d-flex justify-content-center">
+    <div class="input-group" style="max-width: 500px;">
+      <input type="text" id="task-name" asp-for="NewTaskTitle" class="form-control" placeholder="Co máš dnes na práci?..." required />
+      <button type="button" class="btn btn-success px-4 add-task">Přidat úkol</button>
+    </div>
+  </form>
+
+  <div class="mx-auto" style="max-width: 500px;">
+    @if (!Model.TodoItems.Any())
+    {
+      <div class="alert alert-info">Nemáš žádné úkoly.</div>
+    }
+    else
+    {
+      <ul id="task-container" class="list-group shadow-sm">
+        @foreach (var item in Model.TodoItems)
+        {
+          <li class="list-group-item task">
+            <span class="fs-5 left">@item.Title</span>
+            <input type="checkbox" id="taskIsDone" name="taskDone" value="task" data-id="@item.Id" @(item.isDone ? "checked" : "")>
+            <span class="badge bg-secondary rounded-pill">@item.CreatedAt.ToLocalTime().ToString("HH:mm")</span>
+          </li>
+        }
+      </ul>
+    }
   </div>
 </div>

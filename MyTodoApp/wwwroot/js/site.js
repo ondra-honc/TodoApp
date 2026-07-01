@@ -25,16 +25,45 @@ addTaskButton.addEventListener('click', async () => {
     const data = await response.json();
 
     const taskHtml = `
-        <div class="task">
-          <h2>${data.name}</h2>
-          <input type="checkbox" name="task" value="Task" />
-        </div>
-      `;
-
+    <div class="task">
+      <h2>${data.name}</h2>
+      <input type="checkbox" class="task-checkbox" data-id="${data.id}" />
+    </div>
+  `;
     document.getElementById('task-container').insertAdjacentHTML('beforeend', taskHtml);
     inputElement.value = "";
   } else {
     const errorText = await response.text();
     alert(`Něco se nepovedlo na serveru!\nKód: ${response.status}\nDůvod: ${errorText}`);
+  }
+});
+
+document.getElementById('task-container').addEventListener('change', async (event) => {
+  if (event.target.tagName === 'INPUT' && event.target.type === 'checkbox') {
+    const checkbox = event.target;
+    const taskId = checkbox.getAttribute('data-id');
+    const isDone = checkbox.checked; 
+
+    const tokenElement = document.querySelector('input[name="__RequestVerificationToken"]');
+    const token = tokenElement ? tokenElement.value : "";
+
+    const response = await fetch('?handler=UpdateStatus', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'RequestVerificationToken': token
+      },
+      body: new URLSearchParams({
+        'id': taskId,
+        'isDone': isDone
+      })
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      alert(`Stav se neuložil!\nKód: ${response.status}\n${errorText}`);
+
+      checkbox.checked = !isDone;
+    }
   }
 });
